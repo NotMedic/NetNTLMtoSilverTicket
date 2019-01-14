@@ -1,0 +1,9 @@
+[submodule "SpoolSample"]
+	path = SpoolSample
+	url = https://github.com/leechristensen/SpoolSample
+[submodule "ntlmv1-multi"]
+	path = ntlmv1-multi
+	url = https://github.com/evilmog/ntlmv1-multi
+[submodule "cfaf8a34f76569a8251bde65fe69dccc"]
+	path = cfaf8a34f76569a8251bde65fe69dccc
+	url = https://gist.github.com/3xocyte/cfaf8a34f76569a8251bde65fe69dccc
