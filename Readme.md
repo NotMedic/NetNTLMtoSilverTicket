@@ -22,7 +22,8 @@ Using Powershell, get a list of Windows boxes. Servers are usually priority, so 
 
 Using a slightly modified @mysmartlogin's (Vincent Le Toux's) SpoolerScanner, see if the Spooler Service is listening
 
-    ForEach ($server in Get-Content servers.txt) {Get-SpoolSample $server}
+    . .\Get-SpoolStatus.ps1
+    ForEach ($server in Get-Content servers.txt) {Get-SpoolStatus $server}
 
 You can also use rpcdump.py on Linux and look for the MS-RPRN Protocol
 
