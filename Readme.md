@@ -18,7 +18,7 @@ Generate a Silver Ticket using the newly obtained NTLM Hash using @agsolino's (A
 
 Using Powershell, get a list of Windows boxes. Servers are usually priority, so lets focus there:
 
-    Get-ADComputer -Filter {(OperatingSystem -like "*windows*server*") -and (OperatingSystem -notlike "2016") -and (Enabled -eq "True")} -Properties * | select Name | ft -HideTableHeaders &gt; servers.txt
+    Get-ADComputer -Filter {(OperatingSystem -like "*windows*server*") -and (OperatingSystem -notlike "2016") -and (Enabled -eq "True")} -Properties * | select Name | ft -HideTableHeaders > servers.txt
 
 Using a slightly modified @mysmartlogin's (Vincent Le Toux's) SpoolerScanner, see if the Spooler Service is listening
 
