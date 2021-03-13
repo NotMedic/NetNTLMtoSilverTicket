@@ -7,7 +7,7 @@ import os
 import sys
 import argparse
 import binascii
-import ConfigParser
+import configparser
 import logging
 from time import sleep
 from threading import Thread
@@ -51,7 +51,7 @@ class SMBServer(Thread):
 
     def run(self):
         # mini config for the server
-        smbConfig = ConfigParser.ConfigParser()
+        smbConfig = configparser.ConfigParser()
         smbConfig.add_section('global')
         smbConfig.set('global', 'server_name','server_name')
         smbConfig.set('global', 'server_os','Windows')
